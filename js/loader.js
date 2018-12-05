@@ -62,7 +62,8 @@ $(function () {
         },
         activate: function () {
             var m = moment().tz(this.name);
-            $labelName.text('@' + this.name);
+            var name = this.name.split("/");
+            $labelName.text('@' + name[1]);
             $labelTime.text(m.format("LT"));
             $axisX.css('left', this.x * 100 + '%');
             $axisY.css('top', this.y * 100 + '%');

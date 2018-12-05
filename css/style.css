@@ -74,6 +74,22 @@
     height: 1.5rem;
 }
 
-.labels {
+.label-left {
     font-size: 2rem;
+    text-align: left;
+}
+.label-right {
+    font-size: 2rem;
+    text-align: right;
+}
+
+@media (max-width: 576px) {
+    .label-left {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .label-right {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
