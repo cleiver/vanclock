@@ -65,6 +65,7 @@ $(function () {
             var name = this.name.split("/");
             $labelName.text('@' + name[1]);
             $labelTime.text(m.format("LT"));
+            $vancouver.html('@Vancouver ' + moment.tz(Date.now(), "America/Vancouver").format('LT'));
             $axisX.css('left', this.x * 100 + '%');
             $axisY.css('top', this.y * 100 + '%');
         },
